@@ -1,0 +1,10 @@
+<h1> display all books </h1>
+{% for books in object_list %}
+<ul>
+    <li>book name : {{books.book_name}}</li>
+    <li>ISBN : {{books.isbn}}</li>
+    <li>catagory : {{books.category}}</li>
+    <li>NO.copys : {{books.avaliable_copys}}</li>
+</ul>
+
+{%endfor%}
