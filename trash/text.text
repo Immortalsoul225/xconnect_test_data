@@ -1,0 +1,25 @@
+generate  3 time table fy,sy and ty for teachers based on the following constraints:
+1.each teachers lectures must not overlap with her lectures of other time table 
+2. each teachers must have 4 lectures per week and at most 2 per day 
+3.time table is from monday to satrueday 
+4.there must be 4 to 6 lecture per day  
+5.the teachers are "teacher1,teacher2,teacher3,teacher4,teacher5,teacher6,teacher7,teacher8"
+6.subject thought by teacher for :
+a) fy :
+teacher1 = math 
+teacher2 = science ,science lab
+teacher3 = english
+teacher4 = electrionic ,electrionic lab
+teacher5 =geography
+
+b)sy:
+teacher1 = biolagy, biolagy lab
+teacher3 = computer application ,computer application lab
+teacher6 = mvc 
+teacher7 = Iot
+
+c)ty:
+teacher5 = wf ,wf lab
+teacher6 = mmt ,mmt lab
+teacher7 = project 
+teacher1 = oop 

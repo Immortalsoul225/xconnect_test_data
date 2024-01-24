@@ -103,30 +103,25 @@ def genetic_algorithm(classes, teachers, days, timetable_count, generations):
 
 if __name__ == "__main__":
     classes = {
-        "FY": ["Math", "English", "Physics", "Chemistry"],
-        "SY": ["Biology", "History", "Geography", "Computer Science"],
-        "TY": ["Economics", "Psychology", "Sociology", "Physical Education"]
+        "FY": ["stalin", "worral", "aqualla", "arti"],
+        "SY": ["rushita", "worral", "aqualla", "Edward"],
+        "TY": ["vipul", "worral", "aqualla", "rushita"]
     }
     teachers = {
-        "Math": ["stalin"],
-        "English": ["Teacher C"],
-        "Physics": ["Teacher E"],
-        "Chemistry": ["Teacher G",],
+        "stalin": ["Subject A"],
+        "worral": ["Subject B"],
+        "aqualla": ["Subject C"],
+        "arti": ["Subject D"],
+        "rushita": ["Subject E"],
+        "Edward": ["Subject F"],
+        "vipul": ["Subject G"]
 
-        "Biology": ["stalin"],
-        "History": ["Teacher E"],
-        "Geography": ["Teacher N"],
-        "Computer Science": ["Teacher O"],
-
-        "Economics": ["stalin"],
-        "Psychology": ["Teacher N"],
-        "Sociology": ["Teacher O"],
-        "Physical Education": ["Teacher X"]
     }
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-    timetable_count = 10
+    timetable_count = 100
     generations = 1000
+
     final_timetable = genetic_algorithm(classes, teachers, days, timetable_count, generations)
     
     print("\nFinal Timetable:")
@@ -136,3 +131,4 @@ if __name__ == "__main__":
             print(f"\n{day}:")
             for lecture in lectures:
                 print(f"{lecture.subject} - {lecture.teacher}")
+
